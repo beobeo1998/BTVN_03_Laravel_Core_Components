@@ -16,6 +16,9 @@ class CheckToken
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if($request->has('_token')){
+            return $next($request);
+        }
+        return redirect()->back();
     }
 }
