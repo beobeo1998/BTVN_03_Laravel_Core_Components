@@ -16,11 +16,11 @@
             @csrf
             <div class="form-group">
               <label for="Title">Username</label>
-              <input type="text" name="username" class="form-control" id="username" aria-describedby="username" placeholder="Enter username">
+              <input type="text" name="username" required="" class="form-control" id="username" aria-describedby="username" placeholder="Enter username">
             </div>
             <div class="form-group">
                 <label for="Title">Password</label>
-                <input type="password" name="title" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
+                <input type="password" name="title"required  class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
